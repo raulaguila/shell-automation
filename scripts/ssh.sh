@@ -2,7 +2,7 @@
 # https://www.cyberciti.biz/faq/ubuntu-linux-install-openssh-server/
 
 # Install openssh server
-apt-get install openssh-server
+apt-get install -y openssh-server
 
 # Enable ssh service
 systemctl enable ssh --now
