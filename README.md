@@ -17,7 +17,7 @@ Script to install a list of [snap packages](https://snapcraft.io/store).
 Command example:
 
 ```bash
-sudo ./snap.sh -i ./install_list.txt
+sudo ./snap.sh -i ./list.txt
 ```
 
 Where:

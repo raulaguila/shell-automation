@@ -7,7 +7,7 @@ This script automates the installation of [snap package](https://snapcraft.io/st
 Command example:
 
 ```bash
-sudo ./snap.sh -i ./install_list.txt
+sudo ./snap.sh -i ./list.txt
 ```
 
 Where:
