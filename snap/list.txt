@@ -1,0 +1,7 @@
+code --classic
+mqttx
+dbeaver-ce
+postman
+htop
+libreoffice
+vlc
