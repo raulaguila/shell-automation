@@ -1,6 +1,8 @@
 #!/bin/bash
 # https://www.cyberciti.biz/faq/ubuntu-linux-install-openssh-server/
 
+apt update && upgrade -y
+
 # Install openssh server
 apt-get install -y openssh-server
 
