@@ -21,10 +21,10 @@ sudo ./snap.sh -i ./list.txt
 ```
 
 Where:
-- (`sudo`) It is to run the script with privileges;
-- (`./snap.sh`) Is the script on snap folder;
-- (`-i` or `-r`) Is the parameter to install or remove the packages;
-- (`./list.txt`) Is the file with packages to install or remove;
+- `sudo` It is to run the script with privileges;
+- `./snap.sh` Is the script on snap folder;
+- `-i` or `-r` Is the parameter to install or remove the packages;
+- `./list.txt` Is the file with packages to install or remove;
 
 ## Scripts Folder
 
