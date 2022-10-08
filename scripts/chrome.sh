@@ -1,7 +1,25 @@
 #!/bin/bash
 
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+package_name="google-chrome-stable"
+file_name="google-chrome-stable_current_amd64.deb"
 
-dpkg -i google-chrome-stable_current_amd64.deb
+package_installed=$(dpkg-query -W --showformat='${Status}\n' $package_name|grep "install ok installed")
+echo Checking for $package_name: $package_installed
 
-rm google-chrome-stable_current_amd64.deb
+if [ "" = "$package_installed" ]; then
+    wget https://dl.google.com/linux/direct/$file_name
+    dpkg -i $file_name
+fi
+
+apt --fix-broken install
+
+package_installed=$(dpkg-query -W --showformat='${Status}\n' $package_name|grep "install ok installed")
+echo Checking for $package_name: $package_installed
+
+if [ "" = "$package_installed" ]; then
+    dpkg -i $file_name
+fi
+
+if [[ -f "./$file_name" ]]; then
+    rm $file_name
+fi

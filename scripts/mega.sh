@@ -1,13 +1,13 @@
 #!/bin/bash
 
-package_name="mongodb-compass"
-file_name="mongodb-compass_1.33.1_amd64.deb"
+package_name="megasync"
+file_name="megasync-xUbuntu_22.04_amd64.deb"
 
 package_installed=$(dpkg-query -W --showformat='${Status}\n' $package_name|grep "install ok installed")
 echo Checking for $package_name: $package_installed
 
 if [ "" = "$package_installed" ]; then
-    wget https://downloads.mongodb.com/compass/$file_name
+    wget https://mega.nz/linux/repo/xUbuntu_22.04/amd64/$file_name
     dpkg -i $file_name
 fi
 
