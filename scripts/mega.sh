@@ -7,19 +7,22 @@ package_installed=$(dpkg-query -W --showformat='${Status}\n' $package_name|grep 
 echo Checking for $package_name: $package_installed
 
 if [ "" = "$package_installed" ]; then
-    wget https://mega.nz/linux/repo/xUbuntu_22.04/amd64/$file_name
+    if ! [[ -f "./$file_name" ]]; then
+        wget https://mega.nz/linux/repo/xUbuntu_22.04/amd64/$file_name
+    fi
+    
     dpkg -i $file_name
-fi
 
-apt --fix-broken install
+    apt --fix-broken install
 
-package_installed=$(dpkg-query -W --showformat='${Status}\n' $package_name|grep "install ok installed")
-echo Checking for $package_name: $package_installed
+    package_installed=$(dpkg-query -W --showformat='${Status}\n' $package_name|grep "install ok installed")
+    echo Checking for $package_name: $package_installed
 
-if [ "" = "$package_installed" ]; then
-    dpkg -i $file_name
-fi
+    if [ "" = "$package_installed" ]; then
+        dpkg -i $file_name
+    fi
 
-if [[ -f "./$file_name" ]]; then
-    rm $file_name
+    if [[ -f "./$file_name" ]]; then
+        rm $file_name
+    fi
 fi

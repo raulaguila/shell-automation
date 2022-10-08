@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# github-desktop
 apt update && upgrade -y
 
 apt install git-all -y
