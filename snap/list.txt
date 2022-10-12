@@ -1,4 +1,5 @@
 code --classic
+node --classic
 mqttx
 dbeaver-ce
 postman
