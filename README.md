@@ -2,12 +2,12 @@
 
 Scripts to automate the installation of softwares in linux on a new computer.
 
-## Atention
+## Attention
 
-To make a shell script executable, need run the command:
+To make a shell script executable, run the following command:
 
 ```bash
-sudo chmod +x <script_file>.sh
+sudo chmod +x <script_file_name>.sh
 ```
 
 ## Snap Folder
