@@ -13,7 +13,7 @@ if [ "" = "$package_installed" ]; then
     
     dpkg -i $file_name
 
-    apt --fix-broken install
+    apt --fix-broken install -y
 
     package_installed=$(dpkg-query -W --showformat='${Status}\n' $package_name|grep "install ok installed")
     echo Checking for $package_name: $package_installed
