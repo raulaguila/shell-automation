@@ -8,3 +8,5 @@ mkswap /swapfile
 swapon /swapfile
 
 free -m
+
+# In line 5 in 64GB change to the desired size of your swap
