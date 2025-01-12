@@ -1,4 +1,4 @@
-* .bashrc file:
+* `.bashrc` file:
 
   ```shell
   # configure golang vars

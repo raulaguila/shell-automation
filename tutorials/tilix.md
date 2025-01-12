@@ -12,4 +12,4 @@ Execute to change default terminal:
 sudo update-alternatives --config x-terminal-emulator
 ```
 
-Press the Tilix index and press <ENTER>.
+Press the Tilix index and press < ENTER >.

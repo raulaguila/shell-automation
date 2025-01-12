@@ -1,4 +1,4 @@
-* .zshrc file:
+* `.zshrc` file:
 
   ```shell
   # to autocomplete make command
