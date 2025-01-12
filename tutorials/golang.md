@@ -2,29 +2,29 @@
 
 Download and install: [Golang](https://go.dev/doc/install)
 
-Edit file: `~/.bashrc` on linux or `~/.zshrc` on macOS.
+* Edit file: `~/.bashrc` on linux or `~/.zshrc` on macOS.
 
-```shell
-sudo nano ~/.bashrc
-```
+    ```shell
+    sudo nano ~/.bashrc
+    ```
 
-Add and save:
+* Add and save:
 
-```text
-export GOPATH=$HOME/go
-export GOBIN=$GOPATH/bin
-export GOROOT=/usr/local/go
-export PATH=$PATH:$GOROOT/bin:$GOBIN
-```
+    ```text
+    export GOPATH=$HOME/go
+    export GOBIN=$GOPATH/bin
+    export GOROOT=/usr/local/go
+    export PATH=$PATH:$GOROOT/bin:$GOBIN
+    ```
 
-Run:
+* Run:
 
-```shell
-source ~/.bashrc
-```
+    ```shell
+    source ~/.bashrc
+    ```
 
-Restart the terminal and run:
+* Restart the terminal and run:
 
-```shell
-go version
-```
+    ```shell
+    go version
+    ```
