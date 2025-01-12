@@ -14,4 +14,4 @@
   # alias for python
   alias python=python3
   ```
-  
+
